@@ -6,8 +6,7 @@ echo "########################################################"
 
 echo "** Executing Dovecot and syslog"
 
-#rsyslogd
+rsyslogd
+dovecot
 
-#exec dumb-init tail -f /var/log/maillog
-
-exec dumb-init dovecot -F
+exec dumb-init tail -f /var/log/maillog
