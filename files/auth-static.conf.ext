@@ -1,0 +1,4 @@
+userdb {
+    driver = static
+    args = uid=1000 gid=1000 home=/var/mail/vhosts/%d/%n
+}
